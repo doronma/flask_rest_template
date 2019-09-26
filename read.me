@@ -1,0 +1,5 @@
+build:
+docker build --rm -f "Dockerfile" -t doroncomputer/simple-flask-rest:latest .
+
+run:
+docker run --rm -it -p 5000:5000/tcp doroncomputer/simple-flask-rest:latest
