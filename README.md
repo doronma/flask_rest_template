@@ -2,7 +2,7 @@
 Very simple flask api application, ready to be Dockerized.
 
 build:
-docker build --rm -f "Dockerfile" -t doroncomputer/simple-flask-rest:latest .
+docker build --rm -f "Dockerfile" -t user/simple-flask-rest:latest .
 
 run:
-docker run --rm -it -p 5000:5000/tcp doroncomputer/simple-flask-rest:latest
+docker run --rm -it -p 5000:5000/tcp user/simple-flask-rest:latest
