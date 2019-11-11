@@ -1,8 +1,12 @@
 
+import os
+
 from flask import Flask
 from flask_restplus import Api, Resource
 
 from . import app
+
+myName= os.environ.get('MY_NAME1')
 
 api = Api(app)
 
@@ -13,7 +17,7 @@ class HelloWorld(Resource):
 
 @app.route("/test")
 def test():
-    return "<html>this is a test</html>"
+    return f"<html>this is a test for {myName} </html>"
 
 @app.route("/api/data")
 def get_data():
